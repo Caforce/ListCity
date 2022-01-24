@@ -73,7 +73,6 @@ public class ShowActivityTest {
         Button button = (Button) solo.getView(R.id.backbutton);
         solo.clickOnView(button);
         solo.assertCurrentActivity("Back Button failed",  MainActivity.class);
-
     }
 
 
@@ -82,8 +81,8 @@ public class ShowActivityTest {
  * Close activity after each test
  * @throws Exception
 */
- @After
- public void tearDown() throws Exception{
- solo.finishOpenedActivities();
- }
+     @After
+     public void tearDown() throws Exception{
+     solo.finishOpenedActivities();
+     }
  }

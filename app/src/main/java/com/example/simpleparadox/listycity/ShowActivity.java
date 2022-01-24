@@ -35,7 +35,6 @@ public class ShowActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 ShowActivity.this.finish();
-
             }
         });
     }
